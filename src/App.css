@@ -1,0 +1,445 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #eeeeee;
+}
+
+li{
+    list-style: none;
+}
+
+#root{
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-position{
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 90;
+}
+
+
+
+@media  (max-width:425px) {
+    
+    .container-product{
+        min-width: 150px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media  (min-width:768px) {
+    
+    .container-product{
+        min-width: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 2rem;
+        padding: 10px;
+    }
+}
+
+@media  (min-width:1024px) {
+    
+    .container-product{
+        min-width: 150px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 2rem;
+        padding: 10px;
+    }
+}
+
+/* shoping cart */
+
+.canvas{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(105, 105, 105, 0.795);
+    visibility: visible;
+    transition: all .3s ease-in-out;
+}
+
+.canvasoff{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+
+.canvas-products{
+    width: 320px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .3s ease-in;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.canvas-productoff{
+    width: 320px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: -400px;
+    top: 0;
+    transition: all .3s ease-in;
+}
+
+.title-cart{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+  padding-right: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.body-cart{
+    width: 100%;
+    height: 800px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* style minicart */
+
+.container-minicart{
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+    border: solid 1px rgb(206, 206, 255);
+    background-color: #c0c0c0;
+    box-shadow: 0 0 7px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.minicart{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #c0c0c0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.container-img-minicart{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container-img-minicart img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-description-minicart{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title-minicart{
+    width: 100%;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.body-minicart{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-right: 30px;
+}
+
+.container-buttons-minicart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-buttons-minicart button{
+    width: 30px;
+    height: 25px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.countProduct{
+    padding: 0px 5px;
+}
+
+.cart-count{
+    position: relative;
+}
+
+.count-products{
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(248, 129, 129);
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+.count-products-visible{
+    visibility: hidden;
+}
+
+/* page product src="/product/:id" */
+
+
+
+/* cart page one */
+
+.container-page-productOne{
+    min-height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (min-width:700px) {
+    .container-page-productOne{
+        padding-top: 100px;
+    }
+}
+
+.container-product-page{
+    width: 320px;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-image-product{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.container-image-product img{
+    width: 80%;
+}
+
+.container-description-product{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.container-h1-product-page{
+    width: 100%;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 0 10px;
+}
+
+.container-icon-start-qualify{
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.container-icon-start-qualify span{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.price-product-page{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.description-product-page{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(75, 75, 75);
+}
+
+
+.container-model-and-category{
+    padding: 10px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+.buttons-product-page{
+    display: flex;
+    border: solid 1px black;
+    margin: 10px 0;
+    flex-direction: row;
+}
+
+.buttons-product-page div{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px black;
+}
+
+.button-add-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: black;
+    color: white;
+}
+
+
+
+.container-social-networks{
+    display: flex;
+}
+
+@media (min-width:768px) {
+    .container-product-page{
+        display: flex;
+        flex-direction: row;
+        width: 700px;
+        border: solid 1px black;
+        border-radius: 0px;
+    }
+
+    .container-image-product{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        border-right: solid 1px black;
+    }
+
+    .container-image-product img{
+        height: 300px;
+    }
+
+    .container-description-product{
+        width: 400px;
+    }
+}
+
+/* gallery container */
+
+.gallery-container{
+    width: 90vw;
+    height: 200px;
+    background-color: white;
+    border: solid 1px black;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: unset;
+}
+
+.gallery{
+    width: max-content;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+    margin: 0px;
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.list-gallery{
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 30px;
+}
+
+.container-image-gallery{
+    width: 100%;
+    height: 50px;
+}
+
+.container-image-gallery img{
+    width: 100%;
+    height: 80px;
+}
+
+@media (min-width:768px) {
+    .gallery-container{
+        width: 760px;
+        height: 200px;
+        background-color: white;
+        border: solid 1px black;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-behavior: unset;
+    }
+}
+
+.title-gallery{
+    font-size: 13px;
+    font-weight: 600;
+}

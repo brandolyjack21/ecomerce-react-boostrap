@@ -1,0 +1,126 @@
+{
+    "productos": [
+      {
+        "nombre": "Lavadora",
+        "marca": "EcoClean",
+        "modelo": "LAV-2000",
+        "precio": 499.99,
+        "disponibilidad": true,
+        "descripcion": "Lavadora de carga frontal con capacidad de 8 kg.",
+        "cantidad": 15,
+        "image":"https://promart.vteximg.com.br/arquivos/ids/6513416-1000-1000/image-f457bb782eb14a6d85a61d8b594e7ea0.jpg?v=637977682489500000",
+        "id":1
+      },
+      {
+        "nombre": "Refrigerador",
+        "marca": "FrostyCool",
+        "modelo": "FRIDGE-500",
+        "precio": 799.99,
+        "disponibilidad": true,
+        "descripcion": "Refrigerador de acero inoxidable con capacidad de 500 litros.",
+        "cantidad": 10,
+        "image":"https://electroluxpe.vtexassets.com/arquivos/ids/157103/Refrigerator_ERQU40E2HSS_FrontView_Electrolux_1000x1000.jpg?v=637419358117270000",
+        "id":2
+      },
+      {
+        "nombre": "Horno de Microondas",
+        "marca": "QuickHeat",
+        "modelo": "MICRO-900",
+        "precio": 129.99,
+        "disponibilidad": true,
+        "descripcion": "Horno de microondas con 900 vatios de potencia.",
+        "cantidad": 20,
+        "image":"https://falabella.scene7.com/is/image/FalabellaPE/17367929_1?wid=800&hei=800&qlt=70",
+        "id":3
+      },
+      {
+        "nombre": "Televisor LED",
+        "marca": "UltraVision",
+        "modelo": "TV-55X",
+        "precio": 699.99,
+        "disponibilidad": true,
+        "descripcion": "Televisor LED de 55 pulgadas con resolución 4K.",
+        "cantidad": 8,
+        "image":"https://lucero.com.pe/wp-content/uploads/2022/02/20140104.jpg",
+        "id":4
+      },
+      {
+        "nombre": "Aspiradora",
+        "marca": "CleanSweep",
+        "modelo": "VAC-300",
+        "precio": 149.99,
+        "disponibilidad": true,
+        "descripcion": "Aspiradora sin bolsa con potente succión.",
+        "cantidad": 12,
+        "image":"https://www.edipesa.com.pe/tienda-online/wp-content/uploads/2022/03/WD1.jpg",
+        "id":5
+      },
+      {
+        "nombre": "Licuadora",
+        "marca": "BlendMaster",
+        "modelo": "LIC-600",
+        "precio": 69.99,
+        "disponibilidad": true,
+        "descripcion": "Licuadora con múltiples velocidades y jarra de vidrio.",
+        "cantidad": 25,
+        "image":"https://promart.vteximg.com.br/arquivos/ids/932550-1000-1000/135015.jpg?v=637570617365070000",
+        "id":6
+      },
+      {
+        "nombre": "Máquina de Café",
+        "marca": "CaféExpress",
+        "modelo": "CAF-202",
+        "precio": 89.99,
+        "disponibilidad": true,
+        "descripcion": "Máquina de café automática con molinillo incorporado.",
+        "cantidad": 15,
+        "image":"https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F140%2FMARKETPLACE%20INTERNACIONAL%2F81q-SpYIDUL_194954130538_40.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=bed827399737b8d2c96fb7006c11e9f6",
+        "id":7
+      },
+      {
+        "nombre": "Ventilador de Techo",
+        "marca": "CoolBreeze",
+        "modelo": "FAN-120",
+        "precio": 129.99,
+        "disponibilidad": true,
+        "descripcion": "Ventilador de techo con luz y control remoto.",
+        "cantidad": 18,
+        "image":"https://www.hunterfan.com.mx/cdn/shop/products/21767-ok_800x.jpg?v=1558405288",
+        "id":8
+      },
+      {
+        "nombre": "Plancha de Vapor",
+        "marca": "SteamPro",
+        "modelo": "IRON-300",
+        "precio": 49.99,
+        "disponibilidad": true,
+        "descripcion": "Plancha de vapor con suela antiadherente.",
+        "cantidad": 30,
+        "image":"https://falabella.scene7.com/is/image/FalabellaPE/880293912_1?wid=800&hei=800&qlt=70",
+        "id":9
+      },
+      {
+        "nombre": "Robot Aspirador",
+        "marca": "AutoClean",
+        "modelo": "ROBO-5000",
+        "precio": 249.99,
+        "disponibilidad": true,
+        "descripcion": "Robot aspirador inteligente con mapeo de habitaciones.",
+        "cantidad": 10,
+        "image":"https://xiaomioficial.pe/media/catalog/product/cache/2b88132ea045bae0fc2b44a4f558f9b1/h/m/hm070xia01_2.jpg",
+        "id":10
+      },
+      {
+        "nombre": "Batidora de Mano",
+        "marca": "MixIt",
+        "modelo": "MIX-100",
+        "precio": 39.99,
+        "disponibilidad": true,
+        "descripcion": "Batidora de mano con múltiples accesorios.",
+        "cantidad": 20,
+        "image":"https://s7d2.scene7.com/is/image/TottusPE/40568516_1?wid=1500&hei=1500&qlt=70",
+        "id":11
+      }
+    ]
+  }
+  
