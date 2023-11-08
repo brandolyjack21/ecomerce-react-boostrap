@@ -15,9 +15,8 @@ function Inicio() {
   const getProducts = async () => {
     try {
 
-    const productsJson = await fetch('/public/products.json')
-    const productos = await productsJson.json()
-    setProducts(productos)
+    const productsJson = process.env.JSON_PATH
+    setProducts(productsJson)
     
         
     } catch (error) {
