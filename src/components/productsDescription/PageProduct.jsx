@@ -13,7 +13,8 @@ function PageProduct() {
   const [ count, setCount ] = useState(0);
 
   const getOneProduct = async () => {
-    const productsJson = process.env.JSON_PATH
+    const productsJson = process.env.JSON_PATH_PAGEPRODUCT
+    // ./../../../public/products.json
     setProducts(productsJson)
   };
 

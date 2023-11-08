@@ -15,7 +15,8 @@ function Inicio() {
   const getProducts = async () => {
     try {
 
-    const productsJson = process.env.JSON_PATH
+    const productsJson = process.env.JSON_PATH_INICIO
+    // ./../../public/products.json
     setProducts(productsJson)
     
         
