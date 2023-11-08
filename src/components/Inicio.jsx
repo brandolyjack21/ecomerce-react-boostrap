@@ -15,7 +15,7 @@ function Inicio() {
   const getProducts = async () => {
     try {
 
-    const productsJson = await fetch('./../../public/products.json')
+    const productsJson = await fetch('/public/products.json')
     const productos = await productsJson.json()
     setProducts(productos)
     

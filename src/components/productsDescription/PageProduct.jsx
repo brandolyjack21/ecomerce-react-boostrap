@@ -13,7 +13,7 @@ function PageProduct() {
   const [ count, setCount ] = useState(0);
 
   const getOneProduct = async () => {
-    const res = await fetch("./../../../public/products.json");
+    const res = await fetch("/public/products.json");
     const data = await res.json();
     setProducts(data);
   };
