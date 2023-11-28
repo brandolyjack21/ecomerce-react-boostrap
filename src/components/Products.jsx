@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 function Products({ products }) {
-  console.log(products,"22222222");
+  // console.log(products,"22222222");
   const dispatch = useDispatch()
   return (
     <>

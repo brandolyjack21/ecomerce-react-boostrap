@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap"
 import { useState, useEffect } from "react"
 import Products from "./Products"
+import ProductsJson from './../../public/products.json'
 
 function Inicio() {
 
@@ -14,10 +15,7 @@ function Inicio() {
 
   const getProducts = async () => {
     try {
-
-    const productsJson = process.env.JSON_PATH_INICIO
-    // ./../../public/products.json
-    setProducts(productsJson)
+    setProducts(ProductsJson)
     
         
     } catch (error) {
